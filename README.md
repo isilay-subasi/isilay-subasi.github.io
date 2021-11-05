@@ -6,7 +6,7 @@
 
 ## Blogs
 
-- [X] [1.blog](https://isilay-subasi.github.io/blogs/isilinIlkYazisi.html)
+- [X] [Kotlin Nedir ? Java ile Karşılaştırılması](https://isilay-subasi.github.io/blogs/isilinIlkYazisi.html)
 - [X] [2.blog](https://isilay-subasi.github.io/blogs/isilinIlkYazisi.html)
 - [X] [3.blog](https://isilay-subasi.github.io/blogs/isilinIlkYazisi.html)
 - [ ] [yayınlanacak](https://isilay-subasi.github.io/blogs/isilinIlkYazisi.html) - (14-12-2021)
