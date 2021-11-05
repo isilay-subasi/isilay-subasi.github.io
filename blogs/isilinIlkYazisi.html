@@ -103,28 +103,89 @@
 							<li>Kotlin, Android için resmi dil olarak yayınlanmıştır.</li>
 						 </ul>
 					</p>
-				    
+					<section class="promo-section theme-bg-light py-5 text-center">
+						<div class="container">
+							<h2 class="title">Java And Kotlin</h2>
+							<figure class="promo-figure">
+								<a href="https://www.kotlinvsjava.com/?utm_source=webtekno" target="_blank"><img class="img-fluid" src="../assets/images/1.blog/kotlin-vs-java.png" alt="image"></a>
+							</figure>
+						</div><!--//container-->
+					</section><!--//promo-section-->
 				    <h3 class="mt-5 mb-3">Kotlin ile Java karşılaştırması</h3>
-				    <p>You can get more info at <a href="https://highlightjs.org/" target="_blank">https://highlightjs.org/</a>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
+				    <p><b>Az ve öz (Concise) :</b> Daha az kod ile ihtiyacı karşılama </p>
 				    <pre>
 					    <code>
-function $initHighlight(block, cls) {
-  try {
-    if (cls.search(/\bno\-highlight\b/) != -1)
-      return process(block, true, 0x0F) +
-             ` class="${cls}"`;
-  } catch (e) {
-    /* handle exception */
-  }
-  for (var i = 0 / 2; i < classes.length; i++) {
-    if (checkCondition(classes[i]) === undefined)
-      console.log('undefined');
-  }
+//Java
+Button button = (Button) findViewById(R.id.button); 
+button.setOnClickListener(new View.OnClickListener() { 
+@Override
+public void onClick(View view) {
+/* your code */
 }
-
-export  $initHighlight;
+});
+// Kotlin
+val button = findViewById(R.id.fab) as Button 
+button.setOnClickListener { view -> /* your code */}
 					    </code>
 				    </pre>
+					<p> * Getters, setters, equals(), hashCode(), toString() ve copy() ile POJO sınıfını tek satırda oluşturabilirsiniz.</p>
+					<pre>
+					<code>
+data class Customer(val name: String, val email: String, val company: String)
+					</code>
+					</pre><br>
+					<p><b>Null Safety : </b>Güvenli (Safe)<br>
+<br>Nesne yönelimli bir dilde, null tipinde olan değerler her zaman sorun oluşturmuştur. Bu sorun, null bir değeri kullanmaya çalıştığınızda Null Pointer Exception (NPE) biçiminde gelir.
+
+Java’da sürekli karşılaşılan null hataları giderilerek Kotlin ile NullPointerExceptions gibi bir exceptionu almak tip sistemi ile neredeyse imkansız durum haline geldi.
+Kotlin dili ile Android uygulamalar geliştirirken varsayılan olarak hiçbir değişkene null değerini atayamazsınız ve bir metodu null değer döndüremezsiniz.
+					</p>
+
+					<p><b>Data Classes </b>
+						<br>Data classes özelliği harika bir zamandan tasarruf sağlar. Uygulamalarımızın çoğunun veri odaklı olduğunu göz önüne aldığımızda, sıklıkla kendimizi yalnızca veri saklamak için özellikler ve alanlar içeren sınıflar oluştururken kendimizi buluruz. Java’da, bu çok sıkıcıdır. Çünkü her kullanacağımız özellik için   bir get / set yöntemi belirlememiz gerekmektedir. Fakat Kotlin kullanırsak, yazacağımız sınıf ve özelliklerini tek bir satırda bildirme imkanımız bulunmaktadır.
+					</p>
+					<pre>
+						<code>
+public class User {
+private String name;
+private int age;
+							
+public User(String name, int age) {
+this.name = name;
+this.age = age;
+}
+public void setName(String name) {
+this.name = name;
+}							
+public String getName() {
+return this.name;
+}
+							
+public void setAge(int age) {
+this.age = age;
+}
+							
+public int getAge() {
+return this.age;
+}
+}
+						</code>
+Örnek Java Kodu
+						</pre><br>
+						<pre>
+							<code>
+			
+data class User(var name: String, var age: Int)
+							</code>
+Örnek kodun Kotlin ile yazılmış hali							
+							</pre><br>
+							<p><b>Üst Düzey Fonksiyonlar ve Lambda’lar </b>
+								<br>Önemli olan şey, Kotlin’in işlevsel bir programlama dili olmasıdır. Temel olarak Kotlin, daha yüksek seviyeli fonksiyonlar, lambda ifadeleri, operatör aşırı yüklenmesi, tembel değerlendirme, operatör aşırı yüklenmesi ve çok daha fazlasını içeren birçok kullanışlı yöntemden oluşur.
+							</p>
+							<p><b>Genel olarak özetlemek gerekirse, Kotlin programlama dilinin Java diline göre  bir çok avantaj ve farklılıkları bulunmaktadır.</b>
+								
+							</p>
+
 				    <h3 class="mt-5 mb-3">Typography</h3>
 				    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 				    <h5 class="my-3">Bullet Points:</h5>
