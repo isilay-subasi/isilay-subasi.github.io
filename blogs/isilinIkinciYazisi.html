@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Kotlin Nedir ? </title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="../assets/images/phoenix.png"> 
+    
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/style.css">
+	
+	<style>
+		.config-trigger{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.config-trigger span{
+			animation: roseAnimate 3s linear infinite;
+		}
+
+		@keyframes roseAnimate {
+			from{
+				transform: rotate(0deg);
+			}
+			to{
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="../index.html">Işıl's Blog</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="../assets/images/profile.png" alt="image" >			
+					
+					<div class="bio mb-3">Hi, my name is Işıl SUBAŞİ<br>Computer Engineer<br>&<br>Software Developer<br></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/isil-subasi/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://github.com/isilay-subasi"><i class="fab fa-github-alt fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.hackerrank.com/isil_subasi19?hr_r=1"><i class="fab fa-hackerrank fa-fw"></i></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+					    <a class="nav-link" href="../index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="../about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+					</li>
+				</ul>
+				
+				<div class="my-2 my-md-3">
+					
+				    <a class="btn btn-primary" href="https://themes.3rdwavemedia.com/" target="_blank">Get in Touch</a>
+				    
+				</div>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2">Kotlin Nedir ? </h2>
+				    <div class="meta mb-3"><span class="date" data-publish-date = "2021-10-14"></span><span class="time">5 min read</span><span class="comment"><a href="#">4 comments</a></span></div>
+			    </header>
+			    
+			    <div class="blog-post-body">
+				    <figure class="blog-banner">
+				        <a href=""><img class="img-fluid" src="../assets/images/2.blog/2.blog.2.resim.jpg" alt="image"></a>
+				    </figure>
+				    <p>
+						Android Studio,Web Storm gibi platformlarını geliştiren JET BRAINS firması tarafından geliştirilmiş bir yazılım dilidir.
+						2010 yılında geliştirilmeye başlanmıştır. 2012 yılında açık kaynak kodlu hale gelmiştir. Ve 2016 yılında 1.0 versiyonuyla yayınlanmıştır.
+						<ul>
+							<li>Kotlin Java Virtual Machine altında çalışan yazılım dilidir.</li>
+							<li>Kotlin, Android için resmi dil olarak yayınlanmıştır.</li>
+						 </ul>
+					</p>
+					<section class="promo-section theme-bg-light py-5 text-center">
+						<div class="container">
+							<h2 class="title">Java And Kotlin</h2>
+							<figure class="promo-figure">
+								<a href="https://www.kotlinvsjava.com/?utm_source=webtekno" target="_blank"><img class="img-fluid" src="../assets/images/1.blog/kotlin-vs-java.png" alt="image"></a>
+							</figure>
+						</div><!--//container-->
+					</section><!--//promo-section-->
+				    <h3 class="mt-5 mb-3">Kotlin ile Java karşılaştırması</h3>
+				    <p><b>Az ve öz (Concise) :</b> Daha az kod ile ihtiyacı karşılama </p>
+				    <pre>
+					    <code>
+//Java
+Button button = (Button) findViewById(R.id.button); 
+button.setOnClickListener(new View.OnClickListener() { 
+@Override
+public void onClick(View view) {
+/* your code */
+}
+});
+// Kotlin
+val button = findViewById(R.id.fab) as Button 
+button.setOnClickListener { view -> /* your code */}
+					    </code>
+				    </pre>
+					<p> * Getters, setters, equals(), hashCode(), toString() ve copy() ile POJO sınıfını tek satırda oluşturabilirsiniz.</p>
+					<pre>
+					<code>
+data class Customer(val name: String, val email: String, val company: String)
+					</code>
+					</pre><br>
+					<p><b>Null Safety : </b>Güvenli (Safe)<br>
+<br>Nesne yönelimli bir dilde, null tipinde olan değerler her zaman sorun oluşturmuştur. Bu sorun, null bir değeri kullanmaya çalıştığınızda Null Pointer Exception (NPE) biçiminde gelir.
+
+Java’da sürekli karşılaşılan null hataları giderilerek Kotlin ile NullPointerExceptions gibi bir exceptionu almak tip sistemi ile neredeyse imkansız durum haline geldi.
+Kotlin dili ile Android uygulamalar geliştirirken varsayılan olarak hiçbir değişkene null değerini atayamazsınız ve bir metodu null değer döndüremezsiniz.
+					</p>
+
+					<p><b>Data Classes </b>
+						<br>Data classes özelliği harika bir zamandan tasarruf sağlar. Uygulamalarımızın çoğunun veri odaklı olduğunu göz önüne aldığımızda, sıklıkla kendimizi yalnızca veri saklamak için özellikler ve alanlar içeren sınıflar oluştururken kendimizi buluruz. Java’da, bu çok sıkıcıdır. Çünkü her kullanacağımız özellik için   bir get / set yöntemi belirlememiz gerekmektedir. Fakat Kotlin kullanırsak, yazacağımız sınıf ve özelliklerini tek bir satırda bildirme imkanımız bulunmaktadır.
+					</p>
+					<pre>
+						<code>
+public class User {
+private String name;
+private int age;
+							
+public User(String name, int age) {
+this.name = name;
+this.age = age;
+}
+public void setName(String name) {
+this.name = name;
+}							
+public String getName() {
+return this.name;
+}
+							
+public void setAge(int age) {
+this.age = age;
+}
+							
+public int getAge() {
+return this.age;
+}
+}
+						</code>
+Örnek Java Kodu
+						</pre><br>
+						<pre>
+							<code>
+			
+data class User(var name: String, var age: Int)
+							</code>
+Örnek kodun Kotlin ile yazılmış hali							
+							</pre><br>
+							<p><b>Üst Düzey Fonksiyonlar ve Lambda’lar </b>
+								<br>Önemli olan şey, Kotlin’in işlevsel bir programlama dili olmasıdır. Temel olarak Kotlin, daha yüksek seviyeli fonksiyonlar, lambda ifadeleri, operatör aşırı yüklenmesi, tembel değerlendirme, operatör aşırı yüklenmesi ve çok daha fazlasını içeren birçok kullanışlı yöntemden oluşur.
+							</p>
+							<p><b>Genel olarak özetlemek gerekirse, Kotlin programlama dilinin Java diline göre  bir çok avantaj ve farklılıkları bulunmaktadır.</b>
+								
+							</p>
+
+				    <h3 class="mt-5 mb-3">Typography</h3>
+				    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				    <h5 class="my-3">Bullet Points:</h5>
+				    <ul class="mb-5">
+					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+					</ul>
+					<ol class="mb-5">
+					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+					</ol>
+					<h5 class="my-3">Quote Example:</h5>
+					<blockquote class="blockquote m-lg-5 py-3 pl-4 px-lg-5">
+						<p class="mb-2">You might not think that programmers are artists, but programming is an extremely creative profession. It's logic-based creativity.</p>
+						<footer class="blockquote-footer">John Romero</footer>
+					</blockquote>
+					
+					<h5 class="my-3">Table Example:</h5>
+					<table class="table table-striped my-5">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">First</th>
+								<th scope="col">Last</th>
+								<th scope="col">Handle</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Larry</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<h5 class="mb-3">Embed A Tweet:</h5>
+					
+					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">1969:<br>-what&#39;re you doing with that 2KB of RAM?<br>-sending people to the moon<br><br>2017:<br>-what&#39;re you doing with that 1.5GB of RAM?<br>-running Slack</p>&mdash; I Am Devloper (@iamdevloper) <a href="https://twitter.com/iamdevloper/status/926458505355235328?ref_src=twsrc%5Etfw">November 3, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+				    
+				    <h3 class="mt-5 mb-3">Video Example</h3>
+				    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
+
+				    <div class="embed-responsive embed-responsive-16by9">
+					   <iframe width="560" height="315" src="https://www.youtube.com/embed/hnCmSXCZEpU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
+					</div>
+				   
+			    </div>
+				    
+			    <nav class="blog-nav nav nav-justified my-5">
+				  <a class="nav-link-prev nav-item nav-link rounded-left" href="../index.html">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+				  <a class="nav-link-next nav-item nav-link rounded-right" href="../blog-list.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				</nav>
+				
+				<div class="blog-comments-section">
+					<div id="disqus_thread"></div>
+					<script>
+					    /**
+					     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+					     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+					     *  PLATFORM OR CMS.
+					     *  
+					     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+					     *  https://disqus.com/admin/universalcode/#configuration-variables
+					     */
+					    /*
+					    var disqus_config = function () {
+					        // Replace PAGE_URL with your page's canonical URL variable
+					        this.page.url = PAGE_URL;  
+					        
+					        // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+					        this.page.identifier = PAGE_IDENTIFIER; 
+					    };
+					    */
+					    
+					    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+					        var d = document, s = d.createElement('script');
+					        
+					        // IMPORTANT: Replace 3wmthemes with your forum shortname!
+					        s.src = 'https://3wmthemes.disqus.com/embed.js';
+					        
+					        s.setAttribute('data-timestamp', +new Date());
+					        (d.head || d.body).appendChild(s);
+					    })();
+					</script>
+					<noscript>
+					    Please enable JavaScript to view the 
+					    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+					        comments powered by Disqus.
+					    </a>
+					</noscript>
+				</div><!--//blog-comments-section-->
+				
+		    </div><!--//container-->
+	    </article>
+	    
+	    <section class="promo-section theme-bg-light py-5 text-center">
+		    <div class="container">
+			    <h2 class="title">Promo Section Heading</h2>
+			    <p>You can use this section to promote your side projects etc. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                <figure class="promo-figure">
+			        <a href="https://made4dev.com" target="_blank"><img class="img-fluid" src="../assets/images/promo-banner.jpg" alt="image"></a>
+			    </figure>
+		    </div><!--//container-->
+	    </section><!--//promo-section-->
+	    
+	    <footer class="footer text-center py-2 theme-bg-dark">
+			<small class="copyright"><i class="fas fa-heart" style="color: #fb866a;"></i></small>
+	    </footer>
+    
+    </div><!--//main-wrapper-->
+    
+	<!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
+    <div id="config-panel" class="config-panel d-none d-lg-block">
+		<a id="config-trigger" class="config-trigger config-panel-hide text-center" href="#"><span>🌸</span></a>
+    </div><!--//configure-panel-->
+       
+    <!-- Javascript -->          
+    <script src="../assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="../assets/plugins/popper.min.js"></script> 
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    
+	<script src="../assets/js/index.js"></script>
+
+</body>
+</html> 
+
